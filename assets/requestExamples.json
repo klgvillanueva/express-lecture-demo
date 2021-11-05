@@ -1,0 +1,34 @@
+{
+  "getHTML": {
+    "route": "http://localhost:3000/",
+    "method": "GET",
+    "description": "Serves main html file"
+  },
+  "getAllArticles": {
+    "route": "http://localhost:3000/articles/",
+    "method": "GET",
+    "description": "Get all articles"
+  },
+  "createArticle": {
+    "route": "http://localhost:3000/articles/",
+    "method": "POST",
+    "body": {
+      "name": "Example Author",
+      "title": "FooBar"
+    },
+    "description": "Create a new article. Actual new article is hard-coded so the request body here is just for example."
+  },
+  "updateArticle": {
+    "route": "http://localhost:3000/articles/2345",
+    "method": "PUT",
+    "body": {
+      "title": "new title"
+    },
+    "description": "Update an existing article. Actual update is hard-coded so the request body here is just for example. Can also swap out the 2345 in the route with 1234 or 3456 to update a different article"
+  },
+  "deleteArticle": {
+    "route": "http://localhost:3000/articles/3456",
+    "method": "DELETE",
+    "description": "Delete an existing article. Can also swap out the 3456 in the route with 1234 or 2345 to delete a different article."
+  }
+}
