@@ -65,7 +65,7 @@ articleController.updateArticle = (req, res, next) => {
   );
 };
 
-articleController.deleteArticle = (req, res, next) => {
+articleController.deleteArticles = (req, res, next) => {
   articles.delete(res.locals.db_article.id, (err, success) => {
     if (err)
       return next({
